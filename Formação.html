@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Bruna Betim</title>
+    <style>
+        body {
+            margin:1%;
+        }
+        .container {
+            display: grid;   
+        }
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #3B848C;
+        }
+        .menu {
+            grid-column-start: 5;
+            grid-column-end: 11;
+            justify-content: center;
+            gap: 22px;
+        }
+        .imagem_me {
+            grid-column-start: 1;
+            grid-column-end: 3.5;
+        }
+        .principal{
+            grid-column-start: 4.5;
+            grid-column-end: 12;
+            padding-left: 18px;
+            padding-right: 18px;
+            text-align: justify;
+        }
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #2b6066;
+            color:antiquewhite;
+            text-align: center;
+        }
+        /*definindo marcador*/
+        ul { 
+            list-style-type: none;
+            color:bisque;
+        }
+        /*definindo estado do link*/
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 9px 18px;
+            border: solid bisque 1px;
+        }
+        li {
+            float: left;
+        }
+        a:hover {
+            background-color: #BDE3EA;
+            color: #525252
+        }
+
+        /*medida para aparelhos celulares*/
+        @media only screen and (max-width: 760px) { 
+            .wrapper {
+                grid-column-start: 0.5;
+                grid-column-end: 0.5;
+            }
+            .imagem_me {
+                grid-column-start: 0.5;
+                grid-column-end: 0.5;
+            }
+            .principal {
+                grid-column-start: 0.5;
+                grid-column-end: 0.5;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">
+        Bruna Betim</h1>
+    
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li> <a href="index.html"> Bruna</a> </li>
+            <li> <a href="Formação.html"> Formação </a> </li>
+            <li> <a href="Experiência.html"> Experiência </a> </li>
+            <li> <a href="Contato.html"> Contato </a> </li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_me">
+            <img src="Bru..jpg">
+
+        </aside>
+        <section class="principal">
+            <h1> Formação </h1>
+            <p>Logo que conclui o ensino médio, ingressei na graduação de Biomedicina na Universidade Paulista, 
+                concluída em 2020, onde me identifiquei muito com a matéria de gestão e que deu origem a minha 
+                pós graduação em 2021, de Gestão da Saúde com Ênfase em Administração Hospitalar na Universidade 
+                Anhembi Morumbi, concluída em 2022.</p>
+            <p>Em fevereiro de 2023, dei início ao curso de Análise e Desenvolvimento de Sistemas na Uninter, 
+                área que me desperta muita curiosidade e vontade de dominá-la. Me formarei em meados de 2025.</p>
+            <p>Sigo na luta diária com o inglês. Ainda estou no nível básico, caminhando para o intermediário.</p>
+        </section>
+
+    </div>
+    <footer class="container">
+        <h3> Que bom que você veio! </h3>
+    </footer>
+
+</body>
+
+</html>

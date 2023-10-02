@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Bruna Betim</title>
+    <style>
+        body {
+            margin:1%;
+        }
+        .container {
+            display: grid;   
+        }
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #3B848C;
+        }
+        .menu {
+            grid-column-start: 5;
+            grid-column-end: 11;
+            justify-content: center;
+            gap: 22px;
+        }
+        .imagem_lab {
+            grid-column-start: 1;
+            grid-column-end: 3.5;
+        }
+        .principal{
+            grid-column-start: 4.5;
+            grid-column-end: 12;
+            padding-left: 18px;
+            padding-right: 18px;
+            text-align: justify;
+        }
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #2b6066;
+            color:antiquewhite;
+            text-align: center;
+        }
+        /*definindo marcador*/
+        ul { 
+            list-style-type: none;
+            color:bisque;
+        }
+        /*definindo estado do link*/
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 9px 18px;
+            border: solid bisque 1px;
+        }
+        li {
+            float: left;
+        }
+        a:hover {
+            background-color: #BDE3EA;
+            color: #525252
+        }
+
+        /*medida para aparelhos celulares*/
+        @media only screen and (max-width: 760px) { 
+            .wrapper {
+                grid-column-start: 0.5;
+                grid-column-end: 0.5;
+            }
+            .imagem_lab {
+                grid-column-start: 0.5;
+                grid-column-end: 0.5;
+            }
+            .principal {
+                grid-column-start: 0.5;
+                grid-column-end: 0.5;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">
+        Bruna Betim</h1>
+    
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li> <a href="index.html"> Bruna</a> </li>
+            <li> <a href="Formação.html"> Formação </a> </li>
+            <li> <a href="Experiência.html"> Experiência </a> </li>
+            <li> <a href="Contato.html"> Contato </a> </li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_lab">
+            <img src="Lab..jpg">
+
+        </aside>
+        <section class="principal">
+            <h1> Minhas experiências </h1>
+            <p>Em 2015 tive a oportunidade de trabalhar em um colégio de educação infantil, onde era auxiliar de 
+                classe. Encerrei minha carreira na educação no ano de 2019, pois nesse ano, meus pais abriram um 
+                comércio e então comecei a ajudá-los. </p>
+            <p>No comércio, onde auxilio até hoje, exerço atividades como atendimento ao cliente, resolução de 
+                questões com colaboradores, fornecedores, caixa, e em todas os setores necessários.</p>
+            <p>Em janeiro de 2020 comecei o estágio na universidade que estudava e em agosto do mesmo ano, 
+                conquistei o cargo de auxiliar em um laboratório hospitalar. Em agosto do ano seguinte, fui 
+                surpreendida com uma promoção: virei analista de laboratório e sigo nessa área desde então. 
+                Atuando no setor analítico, sou responsável pelo processamento, avaliação, liberação de exames 
+                e assinatura de laudos. Atuo nos setores de hematologia, bioquímica, urinálise e microbiologia. 
+                Realizo controle interno dos equipamentos e do laboratório.</p>
+            <p>Trabalhar em um laboratório hospitalar com rotina de urgência e emergência, me fez desenvolver 
+                algumas habilidades, como senso de urgência por exemplo, mas, melhor do que isso, trabalhar com 
+                pacientes e em frente ao setor de quimioterapia, foi o que mais me fez mudar como ser humano. 
+                Mudou minhas perspectivas, minhas prioridades e me tornou alguém com mais empatia.  </p>
+        </section>
+    </div>
+    <footer class="container">
+        <h3> Que bom que você veio! </h3>
+    </footer>
+
+</body>
+
+</html>
